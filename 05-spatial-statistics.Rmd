@@ -1,0 +1,2 @@
+# Spatial statistics {#statistics}
+Here will be a nice sections
