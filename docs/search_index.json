@@ -1,0 +1,10 @@
+[
+["index.html", "Linguistic Geocomputation with R Preface", " Linguistic Geocomputation with R George Moroz 2018-06-10 Preface This book is about "],
+["intro.html", "Chapter 1 Introduction 1.1 Why linguistic geocomputations? 1.2 Why do we need geostatistics in linguistics? 1.3 Why R?", " Chapter 1 Introduction 1.1 Why linguistic geocomputations? 1.2 Why do we need geostatistics in linguistics? 1.3 Why R? "],
+["introduction-to-r-language.html", "Chapter 2 Introduction to R language 2.1 Basic objects 2.2 Vectors 2.3 Dataframes 2.4 Importing data to R 2.5 Packages in R", " Chapter 2 Introduction to R language 2.1 Basic objects 2.2 Vectors 2.3 Dataframes 2.4 Importing data to R 2.5 Packages in R "],
+["map-creation.html", "Chapter 3 Map creation", " Chapter 3 Map creation "],
+["db.html", "Chapter 4 Linguistical databases 4.1 Linguistical databases APIs 4.2 Linguistical databases creation", " Chapter 4 Linguistical databases 4.1 Linguistical databases APIs 4.2 Linguistical databases creation Look 4.1 and 3 "],
+["statistics.html", "Chapter 5 Spatial statistics", " Chapter 5 Spatial statistics Here will be a nice sections "],
+["conclusion.html", "Chapter 6 Conclusion", " Chapter 6 Conclusion "],
+["references.html", "References", " References "]
+]

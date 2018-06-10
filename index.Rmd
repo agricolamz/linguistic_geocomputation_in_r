@@ -7,8 +7,12 @@ output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
+github_repo: agricolamz/linguistic_geocomputation_in_r
 link-citations: yes
 description: "This book serves as an introduction of linguistic mapping and spatial statistic analysis using R. This book also provides some  reproducible examples."
 ---
+`r if (knitr:::is_html_output()) '
+# Preface {-}
+'`
 
-Some nice words
+This book is about 
