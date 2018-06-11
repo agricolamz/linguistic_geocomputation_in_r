@@ -1,6 +1,155 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment=NA, fig.align='center')
+```
+
 # Introduction to R language
-## Basic objects
-## Vectors
-## Dataframes
-## Importing data to R
-## Packages in R
+
+Since this book includes a lot of R code examples, this chapter will describe some basics for those, who is not familiar with R. For purposes of understanding R code in this book you don't need any deep knowledge of R. In case you want to learn more, there are a lot of good books on it. I will list only few of them:
+
+* 
+* 
+
+## Instalation
+### R instalation
+To download R, go to [CRAN](https://cran.r-project.org/). Don't try to pick a mirror that's close to you, instead it is better to use the cloud mirror, https://cloud.r-project.org.
+
+### RStudio
+RStudio is an integrated development environment, or IDE, for R programming. There are two possibilities:
+
+* type R code in the R console pane, and press enter to run it;
+* type R code in the Code editor pane, and press Control/Command + Enter to run selected part. It is easier to correct and it is possible to save the result as a script.
+
+```{r rstudio, echo=FALSE, fig.cap="RStudio layout"}
+knitr::include_graphics("images/02-rstudio.png", dpi = 100)
+```
+
+When you first launch RStudio it is more likely, that you won't see the Code Editor pane. It is possible to decrease R Console pane on icons in the pane's right upper corner.
+
+Everything from this book will be availible without RStudio instalation. There are a lot of possibilities to work with R not using RStudio such as R console, command line, Jupyter Notebook, some plugins for working in Sublime, Vim, Emacs, Atom, Notepad++ and other programming text editors.
+
+### RStuio cloud
+It is also possible not to install anything on your own PC, using [RStudio Cloud](https://rstudio.cloud/), a web-based interface for Rstudio and R. In RStudio Cloud it is also possible to share your R projects and collaborate with a select group in a private space. RStudio Cloud is currently free to use, but soon there will be free and paid options.
+
+## Base elements, variables, vectors, dataframe
+### Base elements
+```{r}
+7
+-5.7
+"bonjour"
+"bon mot"
+TRUE
+FALSE
+```
+### Variables
+```{r}
+my_var <- 7
+my_var
+my_var+7
+my_var
+my_var <- my_var + 7
+```
+
+### Vectors
+```{r}
+5:9
+11:4
+numbers <- c(7, 9.9, 24)
+multiple_strings <- c("the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog")
+one_string <- c("the quick brown fox jumps over the lazy dog")
+true_false <- c(TRUE, FALSE, FALSE, TRUE)
+length(numbers)
+length(multiple_strings)
+length(one_string)
+```
+
+### Dataframes
+```{r}
+my_df <- data.frame(latin = c("a", "b", "c"),
+                    cyrillic = c("а", "б", "в"),
+                    greek = c("α", "β", "γ"),
+                    numbers = c(1:3),
+                    is.vowel = c(TRUE, FALSE, FALSE),
+                    stringsAsFactors = FALSE)
+my_df
+nrow(my_df)
+ncol(my_df)
+```
+
+### Indexing
+```{r}
+numbers[3]
+multiple_strings[9]
+my_df[2, 3]
+my_df[2,]
+my_df[,3]
+my_df$is.vowel
+my_df$is.vowel[2]
+```
+
+## Reading files
+We can read to R a dataset about Numeral Classifiers from [AUTOTYP database](https://github.com/autotyp/autotyp-data).
+```{r}
+new_df <- read.csv("https://raw.githubusercontent.com/autotyp/autotyp-data/master/data/Numeral_classifiers.csv")
+head(new_df)
+tail(new_df)
+```
+
+It could be also a file on your computer, just provide a whole path to the file. Windows users need to change backslashes `\` to slashes `/`.
+
+```{r, eval = FALSE}
+new_df_2 <- read.csv("/home/agricolamz/my_file.csv")
+```
+
+## Writing files from R
+```{r, eval = FALSE}
+write.csv(new_df_2, "/home/agricolamz/my_new_file.csv",
+          row.names = FALSE)
+```
+
+## Missing data
+In R, missing values are represented by the symbol `NA` (not available).
+
+```{r}
+is.na(new_df$NumClass.Presence)
+sum(is.na(new_df$NumClass.Presence))
+sum(is.na(new_df))
+```
+
+## How to get help in R
+```{r, eval = FALSE}
+?nchar
+```
+
+## Packages
+There are a lot of R packages for solving a lot of different problems. There are two way for install them (you need an internet connection):
+
+* packages on CRAN are checked in multiple ways and should be stable
+
+```{r, eval=FALSE}
+install.packages("lingtypology")
+```
+
+* packages on GitHub are NOT checked and could contain anything, but it is the place where all package developers keep the last vertion of they work.
+
+```{r, eval=FALSE}
+install.packages("devtools")
+devtools::install_github("ropensci/lingtypology")
+```
+
+* or package file
+```{r, eval=FALSE}
+install.packages("lingtypology",
+                 destdir = "/path/to/your/package")
+```
+
+After the package is installed you need to load the package using the following command:
+```{r, eval=FALSE}
+library("lingtypology")
+```
+
+There is a nice picture from [Phillips N. D. (2017) YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/):
+
+```{r lamp, echo=FALSE, fig.cap="Lamp metaphore"}
+knitr::include_graphics("images/02-package.png", dpi = 100)
+```
+

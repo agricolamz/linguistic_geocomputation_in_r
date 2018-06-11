@@ -25,7 +25,7 @@
 <meta name="author" content="George Moroz">
 
 
-<meta name="date" content="2018-06-10">
+<meta name="date" content="2018-06-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,6 +49,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -73,11 +110,23 @@
 <li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#why-r"><i class="fa fa-check"></i><b>1.3</b> Why R?</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html"><i class="fa fa-check"></i><b>2</b> Introduction to R language</a><ul>
-<li class="chapter" data-level="2.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#basic-objects"><i class="fa fa-check"></i><b>2.1</b> Basic objects</a></li>
-<li class="chapter" data-level="2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#vectors"><i class="fa fa-check"></i><b>2.2</b> Vectors</a></li>
-<li class="chapter" data-level="2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#dataframes"><i class="fa fa-check"></i><b>2.3</b> Dataframes</a></li>
-<li class="chapter" data-level="2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#importing-data-to-r"><i class="fa fa-check"></i><b>2.4</b> Importing data to R</a></li>
-<li class="chapter" data-level="2.5" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#packages-in-r"><i class="fa fa-check"></i><b>2.5</b> Packages in R</a></li>
+<li class="chapter" data-level="2.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#instalation"><i class="fa fa-check"></i><b>2.1</b> Instalation</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#r-instalation"><i class="fa fa-check"></i><b>2.1.1</b> R instalation</a></li>
+<li class="chapter" data-level="2.1.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#rstudio"><i class="fa fa-check"></i><b>2.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="2.1.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#rstuio-cloud"><i class="fa fa-check"></i><b>2.1.3</b> RStuio cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#base-elements-variables-vectors-dataframe"><i class="fa fa-check"></i><b>2.2</b> Base elements, variables, vectors, dataframe</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#base-elements"><i class="fa fa-check"></i><b>2.2.1</b> Base elements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#variables"><i class="fa fa-check"></i><b>2.2.2</b> Variables</a></li>
+<li class="chapter" data-level="2.2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#vectors"><i class="fa fa-check"></i><b>2.2.3</b> Vectors</a></li>
+<li class="chapter" data-level="2.2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#dataframes"><i class="fa fa-check"></i><b>2.2.4</b> Dataframes</a></li>
+<li class="chapter" data-level="2.2.5" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#indexing"><i class="fa fa-check"></i><b>2.2.5</b> Indexing</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#reading-files"><i class="fa fa-check"></i><b>2.3</b> Reading files</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#writing-files-from-r"><i class="fa fa-check"></i><b>2.4</b> Writing files from R</a></li>
+<li class="chapter" data-level="2.5" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#missing-data"><i class="fa fa-check"></i><b>2.5</b> Missing data</a></li>
+<li class="chapter" data-level="2.6" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#how-to-get-help-in-r"><i class="fa fa-check"></i><b>2.6</b> How to get help in R</a></li>
+<li class="chapter" data-level="2.7" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#packages"><i class="fa fa-check"></i><b>2.7</b> Packages</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="map-creation.html"><a href="map-creation.html"><i class="fa fa-check"></i><b>3</b> Map creation</a></li>
 <li class="chapter" data-level="4" data-path="db.html"><a href="db.html"><i class="fa fa-check"></i><b>4</b> Linguistical databases</a><ul>
@@ -106,20 +155,211 @@
             <section class="normal" id="section-">
 <div id="introduction-to-r-language" class="section level1">
 <h1><span class="header-section-number">Chapter 2</span> Introduction to R language</h1>
-<div id="basic-objects" class="section level2">
-<h2><span class="header-section-number">2.1</span> Basic objects</h2>
+<p>Since this book includes a lot of R code examples, this chapter will describe some basics for those, who is not familiar with R. For purposes of understanding R code in this book you don’t need any deep knowledge of R. In case you want to learn more, there are a lot of good books on it. I will list only few of them:</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<div id="instalation" class="section level2">
+<h2><span class="header-section-number">2.1</span> Instalation</h2>
+<div id="r-instalation" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> R instalation</h3>
+<p>To download R, go to <a href="https://cran.r-project.org/">CRAN</a>. Don’t try to pick a mirror that’s close to you, instead it is better to use the cloud mirror, <a href="https://cloud.r-project.org" class="uri">https://cloud.r-project.org</a>.</p>
 </div>
-<div id="vectors" class="section level2">
-<h2><span class="header-section-number">2.2</span> Vectors</h2>
+<div id="rstudio" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> RStudio</h3>
+<p>RStudio is an integrated development environment, or IDE, for R programming. There are two possibilities:</p>
+<ul>
+<li>type R code in the R console pane, and press enter to run it;</li>
+<li>type R code in the Code editor pane, and press Control/Command + Enter to run selected part. It is easier to correct and it is possible to save the result as a script.</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:rstudio"></span>
+<img src="images/02-rstudio.png" alt="RStudio layout" width="480" />
+<p class="caption">
+Figure 2.1: RStudio layout
+</p>
 </div>
-<div id="dataframes" class="section level2">
-<h2><span class="header-section-number">2.3</span> Dataframes</h2>
+<p>When you first launch RStudio it is more likely, that you won’t see the Code Editor pane. It is possible to decrease R Console pane on icons in the pane’s right upper corner.</p>
+<p>Everything from this book will be availible without RStudio instalation. There are a lot of possibilities to work with R not using RStudio such as R console, command line, Jupyter Notebook, some plugins for working in Sublime, Vim, Emacs, Atom, Notepad++ and other programming text editors.</p>
 </div>
-<div id="importing-data-to-r" class="section level2">
-<h2><span class="header-section-number">2.4</span> Importing data to R</h2>
+<div id="rstuio-cloud" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> RStuio cloud</h3>
+<p>It is also possible not to install anything on your own PC, using <a href="https://rstudio.cloud/">RStudio Cloud</a>, a web-based interface for Rstudio and R. In RStudio Cloud it is also possible to share your R projects and collaborate with a select group in a private space. RStudio Cloud is currently free to use, but soon there will be free and paid options.</p>
 </div>
-<div id="packages-in-r" class="section level2">
-<h2><span class="header-section-number">2.5</span> Packages in R</h2>
+</div>
+<div id="base-elements-variables-vectors-dataframe" class="section level2">
+<h2><span class="header-section-number">2.2</span> Base elements, variables, vectors, dataframe</h2>
+<div id="base-elements" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Base elements</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">7</span></code></pre></div>
+<pre><code>[1] 7</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">-</span><span class="fl">5.7</span></code></pre></div>
+<pre><code>[1] -5.7</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="st">&quot;bonjour&quot;</span></code></pre></div>
+<pre><code>[1] &quot;bonjour&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="st">&quot;bon mot&quot;</span></code></pre></div>
+<pre><code>[1] &quot;bon mot&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="ot">TRUE</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="ot">FALSE</span></code></pre></div>
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div id="variables" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Variables</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var &lt;-<span class="st"> </span><span class="dv">7</span>
+my_var</code></pre></div>
+<pre><code>[1] 7</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var<span class="op">+</span><span class="dv">7</span></code></pre></div>
+<pre><code>[1] 14</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var</code></pre></div>
+<pre><code>[1] 7</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var &lt;-<span class="st"> </span>my_var <span class="op">+</span><span class="st"> </span><span class="dv">7</span></code></pre></div>
+</div>
+<div id="vectors" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Vectors</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">5</span><span class="op">:</span><span class="dv">9</span></code></pre></div>
+<pre><code>[1] 5 6 7 8 9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">11</span><span class="op">:</span><span class="dv">4</span></code></pre></div>
+<pre><code>[1] 11 10  9  8  7  6  5  4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">numbers &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">7</span>, <span class="fl">9.9</span>, <span class="dv">24</span>)
+multiple_strings &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;the&quot;</span>, <span class="st">&quot;quick&quot;</span>, <span class="st">&quot;brown&quot;</span>, <span class="st">&quot;fox&quot;</span>, <span class="st">&quot;jumps&quot;</span>, <span class="st">&quot;over&quot;</span>, <span class="st">&quot;the&quot;</span>, <span class="st">&quot;lazy&quot;</span>, <span class="st">&quot;dog&quot;</span>)
+one_string &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;the quick brown fox jumps over the lazy dog&quot;</span>)
+true_false &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>)
+<span class="kw">length</span>(numbers)</code></pre></div>
+<pre><code>[1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">length</span>(multiple_strings)</code></pre></div>
+<pre><code>[1] 9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">length</span>(one_string)</code></pre></div>
+<pre><code>[1] 1</code></pre>
+</div>
+<div id="dataframes" class="section level3">
+<h3><span class="header-section-number">2.2.4</span> Dataframes</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">latin =</span> <span class="kw">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>, <span class="st">&quot;c&quot;</span>),
+                    <span class="dt">cyrillic =</span> <span class="kw">c</span>(<span class="st">&quot;а&quot;</span>, <span class="st">&quot;б&quot;</span>, <span class="st">&quot;в&quot;</span>),
+                    <span class="dt">greek =</span> <span class="kw">c</span>(<span class="st">&quot;α&quot;</span>, <span class="st">&quot;β&quot;</span>, <span class="st">&quot;γ&quot;</span>),
+                    <span class="dt">numbers =</span> <span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>),
+                    <span class="dt">is.vowel =</span> <span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">FALSE</span>),
+                    <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>)
+my_df</code></pre></div>
+<pre><code>  latin cyrillic greek numbers is.vowel
+1     a        а     α       1     TRUE
+2     b        б     β       2    FALSE
+3     c        в     γ       3    FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">nrow</span>(my_df)</code></pre></div>
+<pre><code>[1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ncol</span>(my_df)</code></pre></div>
+<pre><code>[1] 5</code></pre>
+</div>
+<div id="indexing" class="section level3">
+<h3><span class="header-section-number">2.2.5</span> Indexing</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">numbers[<span class="dv">3</span>]</code></pre></div>
+<pre><code>[1] 24</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">multiple_strings[<span class="dv">9</span>]</code></pre></div>
+<pre><code>[1] &quot;dog&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df[<span class="dv">2</span>, <span class="dv">3</span>]</code></pre></div>
+<pre><code>[1] &quot;β&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df[<span class="dv">2</span>,]</code></pre></div>
+<pre><code>  latin cyrillic greek numbers is.vowel
+2     b        б     β       2    FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df[,<span class="dv">3</span>]</code></pre></div>
+<pre><code>[1] &quot;α&quot; &quot;β&quot; &quot;γ&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df<span class="op">$</span>is.vowel</code></pre></div>
+<pre><code>[1]  TRUE FALSE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df<span class="op">$</span>is.vowel[<span class="dv">2</span>]</code></pre></div>
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<div id="reading-files" class="section level2">
+<h2><span class="header-section-number">2.3</span> Reading files</h2>
+<p>We can read to R a dataset about Numeral Classifiers from <a href="https://github.com/autotyp/autotyp-data">AUTOTYP database</a>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">new_df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/autotyp/autotyp-data/master/data/Numeral_classifiers.csv&quot;</span>)
+<span class="kw">head</span>(new_df)</code></pre></div>
+<pre><code>  LID NumClass.n NumClass.Presence
+1 148          0             FALSE
+2  65          0             FALSE
+3  75          0             FALSE
+4  85          0             FALSE
+5 111         NA                NA
+6 163          0             FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tail</span>(new_df)</code></pre></div>
+<pre><code>     LID NumClass.n NumClass.Presence
+250 1397          0             FALSE
+251 2994          5              TRUE
+252 2779          0             FALSE
+253  192          0             FALSE
+254  551          0             FALSE
+255 2564          2              TRUE</code></pre>
+<p>It could be also a file on your computer, just provide a whole path to the file. Windows users need to change backslashes <code>\</code> to slashes <code>/</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">new_df_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;/home/agricolamz/my_file.csv&quot;</span>)</code></pre></div>
+</div>
+<div id="writing-files-from-r" class="section level2">
+<h2><span class="header-section-number">2.4</span> Writing files from R</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write.csv</span>(new_df_<span class="dv">2</span>, <span class="st">&quot;/home/agricolamz/my_new_file.csv&quot;</span>,
+          <span class="dt">row.names =</span> <span class="ot">FALSE</span>)</code></pre></div>
+</div>
+<div id="missing-data" class="section level2">
+<h2><span class="header-section-number">2.5</span> Missing data</h2>
+<p>In R, missing values are represented by the symbol <code>NA</code> (not available).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">is.na</span>(new_df<span class="op">$</span>NumClass.Presence)</code></pre></div>
+<pre><code>  [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE
+ [12] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [23] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [34] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [45] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [56] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [67] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [78] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [89] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[100] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE
+[111] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[122] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[133] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[144] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[155] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE
+[166] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[177]  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE
+[188] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[199] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[210] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[221] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[232] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[243] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[254] FALSE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sum</span>(<span class="kw">is.na</span>(new_df<span class="op">$</span>NumClass.Presence))</code></pre></div>
+<pre><code>[1] 5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sum</span>(<span class="kw">is.na</span>(new_df))</code></pre></div>
+<pre><code>[1] 22</code></pre>
+</div>
+<div id="how-to-get-help-in-r" class="section level2">
+<h2><span class="header-section-number">2.6</span> How to get help in R</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">?nchar</code></pre></div>
+</div>
+<div id="packages" class="section level2">
+<h2><span class="header-section-number">2.7</span> Packages</h2>
+<p>There are a lot of R packages for solving a lot of different problems. There are two way for install them (you need an internet connection):</p>
+<ul>
+<li>packages on CRAN are checked in multiple ways and should be stable</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;lingtypology&quot;</span>)</code></pre></div>
+<ul>
+<li>packages on GitHub are NOT checked and could contain anything, but it is the place where all package developers keep the last vertion of they work.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)
+devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ropensci/lingtypology&quot;</span>)</code></pre></div>
+<ul>
+<li>or package file</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;lingtypology&quot;</span>,
+                 <span class="dt">destdir =</span> <span class="st">&quot;/path/to/your/package&quot;</span>)</code></pre></div>
+<p>After the package is installed you need to load the package using the following command:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;lingtypology&quot;</span>)</code></pre></div>
+<p>There is a nice picture from <a href="https://bookdown.org/ndphillips/YaRrr/">Phillips N. D. (2017) YaRrr! The Pirate’s Guide to R</a>:</p>
+<div class="figure" style="text-align: center"><span id="fig:lamp"></span>
+<img src="images/02-package.png" alt="Lamp metaphore" width="661" />
+<p class="caption">
+Figure 2.2: Lamp metaphore
+</p>
+</div>
 
 </div>
 </div>
@@ -164,7 +404,7 @@ gitbook.start({
 },
 "download": ["linguistic-geocomputation-with-r.pdf", "linguistic-geocomputation-with-r.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });
