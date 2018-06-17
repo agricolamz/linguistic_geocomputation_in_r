@@ -14,7 +14,7 @@ Since this book includes a lot of R code examples, this chapter will describe so
 To download R, go to [CRAN](https://cran.r-project.org/). Don't try to pick a mirror that's close to you, instead it is better to use the cloud mirror, https://cloud.r-project.org.
 
 ### RStudio
-RStudio is an integrated development environment, or IDE, for R programming. There are two possibilities:
+[RStudio](https://www.rstudio.com/products/rstudio/download/) is an integrated development environment, or IDE, for R programming. There are two possibilities for using it:
 
 * type R code in the R console pane, and press enter to run it;
 * type R code in the Code editor pane, and press Control/Command + Enter to run selected part. It is easier to correct and it is possible to save the result as a script.
@@ -30,8 +30,8 @@ Everything from this book will be availible without RStudio instalation. There a
 ### RStuio cloud
 It is also possible not to install anything on your own PC, using [RStudio Cloud](https://rstudio.cloud/), a web-based interface for Rstudio and R. In RStudio Cloud it is also possible to share your R projects and collaborate with a select group in a private space. RStudio Cloud is currently free to use, but soon there will be free and paid options.
 
-## Base elements, variables, vectors, dataframe
-### Base elements
+## Basic elements, variables, vectors, dataframe
+### Basic elements
 ```{r}
 7
 -5.7
@@ -40,6 +40,24 @@ It is also possible not to install anything on your own PC, using [RStudio Cloud
 TRUE
 FALSE
 ```
+### Arithmetic operations
+```{r}
+7+7
+21-8
+4*3
+12/4
+4^3
+4**3
+sum(1, 2,3, 4)
+prod(1, 2,3, 4)
+log(1)
+log(100, base = 10)
+pi
+exp(5)
+sin(13)
+cos(13)
+```
+
 ### Variables
 ```{r}
 my_var <- 7

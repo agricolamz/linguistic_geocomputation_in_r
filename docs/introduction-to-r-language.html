@@ -25,7 +25,7 @@
 <meta name="author" content="George Moroz">
 
 
-<meta name="date" content="2018-06-11">
+<meta name="date" content="2018-06-17">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -115,12 +115,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.1.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#rstudio"><i class="fa fa-check"></i><b>2.1.2</b> RStudio</a></li>
 <li class="chapter" data-level="2.1.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#rstuio-cloud"><i class="fa fa-check"></i><b>2.1.3</b> RStuio cloud</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#base-elements-variables-vectors-dataframe"><i class="fa fa-check"></i><b>2.2</b> Base elements, variables, vectors, dataframe</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#base-elements"><i class="fa fa-check"></i><b>2.2.1</b> Base elements</a></li>
-<li class="chapter" data-level="2.2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#variables"><i class="fa fa-check"></i><b>2.2.2</b> Variables</a></li>
-<li class="chapter" data-level="2.2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#vectors"><i class="fa fa-check"></i><b>2.2.3</b> Vectors</a></li>
-<li class="chapter" data-level="2.2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#dataframes"><i class="fa fa-check"></i><b>2.2.4</b> Dataframes</a></li>
-<li class="chapter" data-level="2.2.5" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#indexing"><i class="fa fa-check"></i><b>2.2.5</b> Indexing</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#basic-elements-variables-vectors-dataframe"><i class="fa fa-check"></i><b>2.2</b> Basic elements, variables, vectors, dataframe</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#basic-elements"><i class="fa fa-check"></i><b>2.2.1</b> Basic elements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#arithmetic-operations"><i class="fa fa-check"></i><b>2.2.2</b> Arithmetic operations</a></li>
+<li class="chapter" data-level="2.2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#variables"><i class="fa fa-check"></i><b>2.2.3</b> Variables</a></li>
+<li class="chapter" data-level="2.2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#vectors"><i class="fa fa-check"></i><b>2.2.4</b> Vectors</a></li>
+<li class="chapter" data-level="2.2.5" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#dataframes"><i class="fa fa-check"></i><b>2.2.5</b> Dataframes</a></li>
+<li class="chapter" data-level="2.2.6" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#indexing"><i class="fa fa-check"></i><b>2.2.6</b> Indexing</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#reading-files"><i class="fa fa-check"></i><b>2.3</b> Reading files</a></li>
 <li class="chapter" data-level="2.4" data-path="introduction-to-r-language.html"><a href="introduction-to-r-language.html#writing-files-from-r"><i class="fa fa-check"></i><b>2.4</b> Writing files from R</a></li>
@@ -168,7 +169,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="rstudio" class="section level3">
 <h3><span class="header-section-number">2.1.2</span> RStudio</h3>
-<p>RStudio is an integrated development environment, or IDE, for R programming. There are two possibilities:</p>
+<p><a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> is an integrated development environment, or IDE, for R programming. There are two possibilities for using it:</p>
 <ul>
 <li>type R code in the R console pane, and press enter to run it;</li>
 <li>type R code in the Code editor pane, and press Control/Command + Enter to run selected part. It is easier to correct and it is possible to save the result as a script.</li>
@@ -187,10 +188,10 @@ Figure 2.1: RStudio layout
 <p>It is also possible not to install anything on your own PC, using <a href="https://rstudio.cloud/">RStudio Cloud</a>, a web-based interface for Rstudio and R. In RStudio Cloud it is also possible to share your R projects and collaborate with a select group in a private space. RStudio Cloud is currently free to use, but soon there will be free and paid options.</p>
 </div>
 </div>
-<div id="base-elements-variables-vectors-dataframe" class="section level2">
-<h2><span class="header-section-number">2.2</span> Base elements, variables, vectors, dataframe</h2>
-<div id="base-elements" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Base elements</h3>
+<div id="basic-elements-variables-vectors-dataframe" class="section level2">
+<h2><span class="header-section-number">2.2</span> Basic elements, variables, vectors, dataframe</h2>
+<div id="basic-elements" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Basic elements</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">7</span></code></pre></div>
 <pre><code>[1] 7</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">-</span><span class="fl">5.7</span></code></pre></div>
@@ -204,8 +205,39 @@ Figure 2.1: RStudio layout
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="ot">FALSE</span></code></pre></div>
 <pre><code>[1] FALSE</code></pre>
 </div>
+<div id="arithmetic-operations" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Arithmetic operations</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">7</span><span class="op">+</span><span class="dv">7</span></code></pre></div>
+<pre><code>[1] 14</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">21</span><span class="op">-</span><span class="dv">8</span></code></pre></div>
+<pre><code>[1] 13</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">4</span><span class="op">*</span><span class="dv">3</span></code></pre></div>
+<pre><code>[1] 12</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">12</span><span class="op">/</span><span class="dv">4</span></code></pre></div>
+<pre><code>[1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">4</span><span class="op">^</span><span class="dv">3</span></code></pre></div>
+<pre><code>[1] 64</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">4</span><span class="op">**</span><span class="dv">3</span></code></pre></div>
+<pre><code>[1] 64</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>,<span class="dv">3</span>, <span class="dv">4</span>)</code></pre></div>
+<pre><code>[1] 10</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">prod</span>(<span class="dv">1</span>, <span class="dv">2</span>,<span class="dv">3</span>, <span class="dv">4</span>)</code></pre></div>
+<pre><code>[1] 24</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log</span>(<span class="dv">1</span>)</code></pre></div>
+<pre><code>[1] 0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log</span>(<span class="dv">100</span>, <span class="dt">base =</span> <span class="dv">10</span>)</code></pre></div>
+<pre><code>[1] 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pi</code></pre></div>
+<pre><code>[1] 3.141593</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">exp</span>(<span class="dv">5</span>)</code></pre></div>
+<pre><code>[1] 148.4132</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sin</span>(<span class="dv">13</span>)</code></pre></div>
+<pre><code>[1] 0.420167</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cos</span>(<span class="dv">13</span>)</code></pre></div>
+<pre><code>[1] 0.9074468</code></pre>
+</div>
 <div id="variables" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Variables</h3>
+<h3><span class="header-section-number">2.2.3</span> Variables</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var &lt;-<span class="st"> </span><span class="dv">7</span>
 my_var</code></pre></div>
 <pre><code>[1] 7</code></pre>
@@ -216,7 +248,7 @@ my_var</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_var &lt;-<span class="st"> </span>my_var <span class="op">+</span><span class="st"> </span><span class="dv">7</span></code></pre></div>
 </div>
 <div id="vectors" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> Vectors</h3>
+<h3><span class="header-section-number">2.2.4</span> Vectors</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">5</span><span class="op">:</span><span class="dv">9</span></code></pre></div>
 <pre><code>[1] 5 6 7 8 9</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">11</span><span class="op">:</span><span class="dv">4</span></code></pre></div>
@@ -233,7 +265,7 @@ true_false &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="
 <pre><code>[1] 1</code></pre>
 </div>
 <div id="dataframes" class="section level3">
-<h3><span class="header-section-number">2.2.4</span> Dataframes</h3>
+<h3><span class="header-section-number">2.2.5</span> Dataframes</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">latin =</span> <span class="kw">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>, <span class="st">&quot;c&quot;</span>),
                     <span class="dt">cyrillic =</span> <span class="kw">c</span>(<span class="st">&quot;а&quot;</span>, <span class="st">&quot;б&quot;</span>, <span class="st">&quot;в&quot;</span>),
                     <span class="dt">greek =</span> <span class="kw">c</span>(<span class="st">&quot;α&quot;</span>, <span class="st">&quot;β&quot;</span>, <span class="st">&quot;γ&quot;</span>),
@@ -251,7 +283,7 @@ my_df</code></pre></div>
 <pre><code>[1] 5</code></pre>
 </div>
 <div id="indexing" class="section level3">
-<h3><span class="header-section-number">2.2.5</span> Indexing</h3>
+<h3><span class="header-section-number">2.2.6</span> Indexing</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">numbers[<span class="dv">3</span>]</code></pre></div>
 <pre><code>[1] 24</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">multiple_strings[<span class="dv">9</span>]</code></pre></div>

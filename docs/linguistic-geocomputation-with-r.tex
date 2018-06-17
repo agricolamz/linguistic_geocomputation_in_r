@@ -116,15 +116,16 @@
 }
 
 \setlength{\droptitle}{-2em}
+
   \title{Linguistic Geocomputation with R}
-  \pretitle{\vspace{\droptitle}\centering\huge}
+    \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-  \author{George Moroz}
-  \preauthor{\centering\large\emph}
+    \author{George Moroz}
+    \preauthor{\centering\large\emph}
   \postauthor{\par}
-  \predate{\centering\large\emph}
+      \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-06-11}
+    \date{2018-06-17}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -191,8 +192,9 @@ cloud mirror, \url{https://cloud.r-project.org}.
 
 \subsection{RStudio}\label{rstudio}
 
-RStudio is an integrated development environment, or IDE, for R
-programming. There are two possibilities:
+\href{https://www.rstudio.com/products/rstudio/download/}{RStudio} is an
+integrated development environment, or IDE, for R programming. There are
+two possibilities for using it:
 
 \begin{itemize}
 \tightlist
@@ -232,10 +234,10 @@ projects and collaborate with a select group in a private space. RStudio
 Cloud is currently free to use, but soon there will be free and paid
 options.
 
-\section{Base elements, variables, vectors,
-dataframe}\label{base-elements-variables-vectors-dataframe}
+\section{Basic elements, variables, vectors,
+dataframe}\label{basic-elements-variables-vectors-dataframe}
 
-\subsection{Base elements}\label{base-elements}
+\subsection{Basic elements}\label{basic-elements}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -295,6 +297,148 @@ dataframe}\label{base-elements-variables-vectors-dataframe}
 
 \begin{verbatim}
 [1] FALSE
+\end{verbatim}
+
+\subsection{Arithmetic operations}\label{arithmetic-operations}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{7}\OperatorTok{+}\DecValTok{7}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 14
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{21}\OperatorTok{-}\DecValTok{8}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 13
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{4}\OperatorTok{*}\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{12}\OperatorTok{/}\DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{4}\OperatorTok{^}\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 64
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{4}\OperatorTok{**}\DecValTok{3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 64
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sum}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 10
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{prod}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 24
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{log}\NormalTok{(}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{log}\NormalTok{(}\DecValTok{100}\NormalTok{, }\DataTypeTok{base =} \DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pi}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 3.141593
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{exp}\NormalTok{(}\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 148.4132
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sin}\NormalTok{(}\DecValTok{13}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 0.420167
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{cos}\NormalTok{(}\DecValTok{13}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[1] 0.9074468
 \end{verbatim}
 
 \subsection{Variables}\label{variables}
