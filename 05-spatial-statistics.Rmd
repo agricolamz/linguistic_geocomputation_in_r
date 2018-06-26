@@ -1,2 +1,12 @@
 # Spatial statistics {#statistics}
-Here will be a nice sections
+## Not all similarities are the same
+In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called **homologous**. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from  Proto-Slavic. Despite coming from different ancecsters some languages can independently evolve some analogous traits. This type of similarities are called **analogous**. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few languages such as Bulgarian, English and French independently lost the case systems. Analogous similarities are commonly devided into typological and areal.
+
+```{r, echo = FALSE, fig.cap="Typology of similarities"}
+DiagrammeR::grViz("digraph rmarkdown{
+node [shape = plaintext, arrowhead = vee, fontsize = 10]
+similarities -> {homologous, analogous}
+analogous -> {areal, typological}
+}")
+```
+

@@ -25,7 +25,7 @@
 <meta name="author" content="George Moroz">
 
 
-<meta name="date" content="2018-06-17">
+<meta name="date" content="2018-06-26">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,6 +47,10 @@
 
 
 
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<script src="libs/viz-0.3/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
 
 
 <style type="text/css">
@@ -134,7 +138,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.1" data-path="db.html"><a href="db.html#api"><i class="fa fa-check"></i><b>4.1</b> Linguistical databases APIs</a></li>
 <li class="chapter" data-level="4.2" data-path="db.html"><a href="db.html#db-creation"><i class="fa fa-check"></i><b>4.2</b> Linguistical databases creation</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>5</b> Spatial statistics</a></li>
+<li class="chapter" data-level="5" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>5</b> Spatial statistics</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistics.html"><a href="statistics.html#not-all-similarities-are-the-same"><i class="fa fa-check"></i><b>5.1</b> Not all similarities are the same</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -156,8 +162,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="statistics" class="section level1">
 <h1><span class="header-section-number">Chapter 5</span> Spatial statistics</h1>
-<p>Here will be a nice sections</p>
+<div id="not-all-similarities-are-the-same" class="section level2">
+<h2><span class="header-section-number">5.1</span> Not all similarities are the same</h2>
+<p>In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called <strong>homologous</strong>. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from Proto-Slavic. Despite coming from different ancecsters some languages can independently evolve some analogous traits. This type of similarities are called <strong>analogous</strong>. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few languages such as Bulgarian, English and French independently lost the case systems. Analogous similarities are commonly devided into typological and areal.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<div id="htmlwidget-8a624514976f110f812c" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8a624514976f110f812c">{"x":{"diagram":"digraph rmarkdown{\nnode [shape = plaintext, arrowhead = vee, fontsize = 10]\nsimilarities -> {homologous, analogous}\nanalogous -> {areal, typological}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 5.1: Typology of similarities
+</p>
+</div>
 
+</div>
 </div>
             </section>
 
