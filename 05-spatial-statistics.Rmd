@@ -1,12 +1,20 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
 # Spatial statistics {#statistics}
 ## Not all similarities are the same
-In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called **homologous**. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from  Proto-Slavic. Despite coming from different ancecsters some languages can independently evolve some analogous traits. This type of similarities are called **analogous**. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few languages such as Bulgarian, English and French independently lost the case systems. Analogous similarities are commonly devided into typological and areal.
+In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities observed in data are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called **homologous**. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from  Proto-Slavic. Despite coming from different ancestors some languages can independently evolve some analogous traits. This type of similarities are called **analogous**. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few offspring languages such as Bulgarian, English and French independently lost their case systems.
 
-```{r, echo = FALSE, fig.cap="Typology of similarities"}
-DiagrammeR::grViz("digraph rmarkdown{
-node [shape = plaintext, arrowhead = vee, fontsize = 10]
-similarities -> {homologous, analogous}
-analogous -> {areal, typological}
-}")
-```
+Analogous similarities are commonly divided into areal and typological. Areal similarities are tend to arise due to the language contact in some multilingual area. Classic example of such an area is Balkans, that have been firstly introduced as a linguistic area in [@trubetzkoy28]. Several other areas were introduced later [see @muysken08]. Other similarities that could be found in languages of the world are typological similarities --- traits that are independently evolved in some languages. For example ejective sounds could be found mostly in Caucasus, Central Africa and North America and it seems like this spatial distribution couldn't be explained neither by a common ancestor nor by a language contact.
 
+To sum up the whole similarity typology:
+
+* homologous
+* analogous
+      * areal
+      * typological
+
+It is really important to keep this typology in mind providing the spatial analysis. During such an analysis we try to find a patterns in data, describe correlation between some variables etc. But all kind of analyses discussed in this chapter can not distinguish all kinds of similarities listed above. So during the analysis researcher need to remmember that similarities observed in data could have different nature.

@@ -47,10 +47,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
-<script src="libs/viz-0.3/viz.js"></script>
-<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.0/grViz.js"></script>
 
 
 <style type="text/css">
@@ -164,15 +160,28 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 5</span> Spatial statistics</h1>
 <div id="not-all-similarities-are-the-same" class="section level2">
 <h2><span class="header-section-number">5.1</span> Not all similarities are the same</h2>
-<p>In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called <strong>homologous</strong>. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from Proto-Slavic. Despite coming from different ancecsters some languages can independently evolve some analogous traits. This type of similarities are called <strong>analogous</strong>. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few languages such as Bulgarian, English and French independently lost the case systems. Analogous similarities are commonly devided into typological and areal.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
-<div id="htmlwidget-8a624514976f110f812c" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8a624514976f110f812c">{"x":{"diagram":"digraph rmarkdown{\nnode [shape = plaintext, arrowhead = vee, fontsize = 10]\nsimilarities -> {homologous, analogous}\nanalogous -> {areal, typological}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-<p class="caption">
-Figure 5.1: Typology of similarities
-</p>
-</div>
+<p>In previous chapters we have learnt how to visualize different linguistic features on the map. But, as title says, not all similarities observed in data are the same. Some languages share some features, because the trait was inherited from a common ancestor. This type of similarities are called <strong>homologous</strong>. For example the majority of the Slavic languages (except Bulgarian and Macedonian) have a case system, because they inherited this from Proto-Slavic. Despite coming from different ancestors some languages can independently evolve some analogous traits. This type of similarities are called <strong>analogous</strong>. For example despite Proto-Slavic, Latin and Proto-Germanic had case systems, few offspring languages such as Bulgarian, English and French independently lost their case systems.</p>
+<p>Analogous similarities are commonly divided into areal and typological. Areal similarities are tend to arise due to the language contact in some multilingual area. Classic example of such an area is Balkans, that have been firstly introduced as a linguistic area in <span class="citation">(Trubetzkoy <a href="#ref-trubetzkoy28">1928</a>)</span>. Several other areas were introduced later <span class="citation">(see Muysken <a href="#ref-muysken08">2008</a>)</span>. Other similarities that could be found in languages of the world are typological similarities — traits that are independently evolved in some languages. For example ejective sounds could be found mostly in Caucasus, Central Africa and North America and it seems like this spatial distribution couldn’t be explained neither by a common ancestor nor by a language contact.</p>
+<p>To sum up the whole similarity typology:</p>
+<ul>
+<li>homologous</li>
+<li>analogous
+<ul>
+<li>areal</li>
+<li>typological</li>
+</ul></li>
+</ul>
+<p>It is really important to keep this typology in mind providing the spatial analysis. During such an analysis we try to find a patterns in data, describe correlation between some variables etc. But all kind of analyses discussed in this chapter can not distinguish all kinds of similarities listed above. So during the analysis researcher need to remmember that similarities observed in data could have different nature.</p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-trubetzkoy28">
+<p>Trubetzkoy, N. S. 1928. “Proposition 16.” In <em>Acts of the First International Congress of Linguists</em>, 17–18.</p>
+</div>
+<div id="ref-muysken08">
+<p>Muysken, P. 2008. <em>From Linguistic Areas to Areal Linguistics</em>. Vol. 90. John Benjamins Publishing.</p>
 </div>
 </div>
             </section>
